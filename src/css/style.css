@@ -1,0 +1,16 @@
+body {
+    color: #999;
+}
+
+.goblin .row {
+    display: flex;
+}
+
+.goblin .col {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 4px;
+}
