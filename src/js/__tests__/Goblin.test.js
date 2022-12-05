@@ -1,9 +1,12 @@
-import Goblin from '../Goblin';
+/**
+ * @jest-environment jsdom
+ */
+import Goblin from "../Goblin";
 
 jest.useFakeTimers();
 
-test('change cell', () => {
-  const html = document.createElement('div');
+test("change cell", () => {
+  const html = document.createElement("div");
   html.innerHTML = `<section class="goblin">
     <div class="row">
       <div class="col">
@@ -14,9 +17,9 @@ test('change cell', () => {
       <div class="col"></div>
     </div>
   </div>`;
-  const Game = new Goblin(html.querySelector('.goblin'));
+  const Game = new Goblin(html.querySelector(".goblin"));
   expect(Game.cells[0].contains(Game.goblinHead)).toBeTruthy();
   Game.change();
-  jest.runTimersToTime(1500);
+  jest.advanceTimersByTime(1500);
   expect(Game.cells[0].contains(Game.goblinHead)).toBeFalsy();
 });

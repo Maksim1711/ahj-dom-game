@@ -1,7 +1,7 @@
 export default class Goblin {
   constructor(gameElement) {
-    this.cells = gameElement.querySelectorAll('.col');
-    this.goblinHead = gameElement.querySelector('.head');
+    this.cells = gameElement.querySelectorAll(".col");
+    this.goblinHead = gameElement.querySelector(".head");
   }
 
   change() {
@@ -14,6 +14,6 @@ export default class Goblin {
       }
       previous = rand;
       this.cells[rand].appendChild(this.goblinHead);
-    }, 1500);
+    }, 1000);
   }
 }
