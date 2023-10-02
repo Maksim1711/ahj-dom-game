@@ -1,3 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/jqqmt029087lmaso?svg=true)](https://ci.appveyor.com/project/Maksim1711/ahj-dom-game)
 
-[Ссылка на GitHub Pages](https://Maksim1711.github.io/ahj-dom-game/)
+![Build status](https://github.com/Maksim1711/ahj-dom-game/actions/workflows/web.yml/badge.svg)
+# Webpack5
+
+[Руководство по настройке Webpack](https://webpack.js.org/guides/)
+[Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
