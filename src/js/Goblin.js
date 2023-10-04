@@ -9,8 +9,11 @@ export default class Goblin {
     let rand = 0;
 
     setInterval(() => {
-      while (rand === previous) {
-        rand = Math.floor(Math.random() * (this.cells.length - 1));
+      for (;;) {
+        rand === previous;
+        if ((rand = Math.floor(Math.random() * (this.cells.length - 1)))) {
+          break;
+        }
       }
       previous = rand;
       this.cells[rand].appendChild(this.goblinHead);
